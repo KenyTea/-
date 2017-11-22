@@ -19,36 +19,6 @@ using namespace std;
 атуры и вывода строк на экран. Также нужно реализовать
 статическую функцию-член, которая будет возвращать
 количество созданных объектов строк.*/
-//class String {
-//	char *stroka;
-//	int *dlina;
-//public:
-//	String() {
-//		dlina = new int(80);
-//		stroka = new char[*dlina];
-//	}
-//	String(int d) {
-//		dlina = new int(d);
-//		stroka = new char[*dlina];
-//	}
-//	String(char *s) {
-//		dlina = new int(strlen(s));
-//		stroka = new char[*dlina];
-//		strcpy(stroka, s);
-//	}
-//	~String() {
-//		delete[]stroka;
-//		delete dlina;
-//	}
-//};
-
-//int main() {
-//	String s();
-//	String s(5);
-//	String s("qwe");
-//	system("pause");
-//	return 0;
-//}
 
 
 class String { // class string
@@ -71,12 +41,26 @@ public:
 	   // str = new char[*Long];
    // }
 
+	~String() {
+		delete Long;
+		delete str;
+	}
+
 	void enter() {
+		cout << "Enter string" << endl;
+		//for (int i = 0; i <Leng; i++)
+		
 
 	}
 
 	void show() {
+		cout << endl;
+		cout << str << endl;
+	}
 
+	char stat() {
+
+		return (int)str;
 	}
 
 };
