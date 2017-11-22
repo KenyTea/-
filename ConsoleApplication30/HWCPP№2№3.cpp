@@ -25,15 +25,17 @@ class String { // class string
 public:
 	char *str;
 	int *Long;
-
+	static int count;
 	String() { // default constructor
 		Long = new int(80);
 		str = new char[*Long];
+		count++;
 	}
 
 	String(int x) {
 		Long = new int(x);
 		str = new char[*Long];
+		count++;
 	}
 
 	//String(string *a) {
@@ -55,7 +57,7 @@ public:
 		str = new char[*Long];
 			cin >> str[i];
 		}
-		
+		count++;
 
 	}
 
@@ -70,6 +72,8 @@ public:
 	}
 
 };
+
+int String::count = 0;
 
 int main() {
 
