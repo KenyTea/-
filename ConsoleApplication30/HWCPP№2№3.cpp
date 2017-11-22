@@ -47,14 +47,20 @@ public:
 	}
 
 	void enter() {
-		cout << "Enter string" << endl;
-		//for (int i = 0; i <Leng; i++)
+		cout << "Enter string leng" << endl;
+		int x;
+		cin >> x;
+		Long = new int(x);
+		for (int i = 0; i < x; i++) {
+		str = new char[*Long];
+			cin >> str[i];
+		}
 		
 
 	}
 
 	void show() {
-		cout << endl;
+		cout << endl; // лажа
 		cout << str << endl;
 	}
 
